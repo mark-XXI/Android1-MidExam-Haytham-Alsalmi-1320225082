@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF5EC"
+    android:padding="24dp">
+
+    <!-- Screen Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artwork Details"
+        android:textColor="#884A19"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Artwork Information Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_artwork_info"
+        android:padding="22dp"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#211A16"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="3dp"/>
+
+        <TextView
+            android:id="@+id/detailArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="#59483D"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/detailYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#59483D"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <!-- Visit Website -->
+    <Button
+        android:id="@+id/visitWebsiteButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_button_enabled"
+        android:backgroundTint="@null"
+        android:text="Visit Website"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button_enabled"
+        android:backgroundTint="@null"
+        android:text="Back to Gallery"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
